@@ -31,6 +31,7 @@ echo "Starting new container $CONTAINER_NAME from image $IMAGE_NAME..."
 # Run the container
 # Adjust volume mounts and device pass-through as needed
 docker run -it --rm --net=host \
+    --device /dev/dri \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v "$WS_ROOT":/home/steve_ros2_ws \

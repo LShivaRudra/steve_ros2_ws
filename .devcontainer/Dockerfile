@@ -32,7 +32,7 @@ RUN apt-get update && apt-get upgrade -y && \
     ros-$ROS_DISTRO-slam-toolbox ros-$ROS_DISTRO-phidgets-spatial \
     ros-$ROS_DISTRO-gazebo-ros-pkgs ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers \
     ros-$ROS_DISTRO-gazebo-ros2-control ros-$ROS_DISTRO-gazebo-plugins ros-$ROS_DISTRO-teleop-twist-keyboard \
-    ros-$ROS_DISTRO-rtabmap-ros \
+    ros-$ROS_DISTRO-rtabmap-ros ros-$ROS_DISTRO-ur-robot-driver ros-$ROS_DISTRO-topic-tools ros-$ROS_DISTRO-dynamixel-sdk \
     python3-scipy \
     && rm -rf /var/lib/apt/lists/* \
     && pip3 install --no-cache-dir open3d dynamixel-sdk
